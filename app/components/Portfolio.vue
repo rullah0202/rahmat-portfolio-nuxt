@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4 max-w-6xl">
       <!-- Section Title -->
       <div class="text-center mb-10 md:mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold font-poppins uppercase mb-3 md:mb-4 text-gray-800">Portfolio</h2>
+        <h2 class="text-3xl md:text-4xl font-semibold font-poppins uppercase mb-3 md:mb-4 text-gray-800 tracking-wider">Portfolio</h2>
         <div class="w-12 h-1 bg-blue-600 mx-auto mb-6 md:mb-8"></div>
       </div>
 
