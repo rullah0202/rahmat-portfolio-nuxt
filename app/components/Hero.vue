@@ -13,7 +13,7 @@
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
       <h2 class="text-5xl md:text-7xl font-bold font-poppins mb-4">I am Rahmat Ullah</h2>
       <p class="text-2xl md:text-3xl font-medium">
-        <span ref="typedElement" class="border-b-4 border-blue-500 pb-1"></span>
+        <span ref="typedElement"></span>
       </p>
     </div>
   </section>
@@ -27,7 +27,7 @@ const typedElement = ref(null)
 
 onMounted(() => {
   new Typed(typedElement.value, {
-    strings: ['Laravel Developer', 'Web Developer', 'Software Developer'],
+    strings: ['Web Developer', 'Laravel Developer', 'Software Developer'],
     typeSpeed: 50,
     backSpeed: 30,
     loop: true
