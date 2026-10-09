@@ -1,28 +1,28 @@
 <template>
-  <section id="portfolio" class="py-16 bg-gray-50">
+  <section id="portfolio" class="py-12 md:py-16 bg-gray-50">
     <div class="container mx-auto px-4 max-w-6xl">
       <!-- Section Title -->
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold font-poppins uppercase mb-4 text-gray-800">Portfolio</h2>
-        <div class="w-16 h-1 bg-blue-600 mx-auto mb-8"></div>
+      <div class="text-center mb-10 md:mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold font-poppins uppercase mb-3 md:mb-4 text-gray-800">Portfolio</h2>
+        <div class="w-12 h-1 bg-blue-600 mx-auto mb-6 md:mb-8"></div>
       </div>
 
       <!-- Filters -->
-      <div class="flex justify-center gap-8 mb-10 border-b pb-2 max-w-md mx-auto">
+      <div class="flex justify-center gap-5 md:gap-8 mb-8 md:mb-10 border-b pb-2 max-w-md mx-auto">
         <button 
           @click="activeFilter = '*'" 
           :class="activeFilter === '*' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-700 hover:text-blue-600'"
-          class="pb-2 text-sm font-bold uppercase tracking-wider transition-all"
+          class="pb-2 text-xs md:text-sm font-bold uppercase tracking-wider transition-all"
         >All</button>
         <button 
           @click="activeFilter = 'web'" 
           :class="activeFilter === 'web' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-700 hover:text-blue-600'"
-          class="pb-2 text-sm font-bold uppercase tracking-wider transition-all"
+          class="pb-2 text-xs md:text-sm font-bold uppercase tracking-wider transition-all"
         >Web</button>
         <button 
           @click="activeFilter = 'software'" 
           :class="activeFilter === 'software' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-700 hover:text-blue-600'"
-          class="pb-2 text-sm font-bold uppercase tracking-wider transition-all"
+          class="pb-2 text-xs md:text-sm font-bold uppercase tracking-wider transition-all"
         >Software</button>
       </div>
 
@@ -37,8 +37,8 @@
           
           <!-- Hover Overlay -->
           <div class="absolute inset-0 bg-blue-600/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
-            <h4 class="text-xl font-bold mb-2">{{ item.title }}</h4>
-            <p class="text-sm text-center mb-4">{{ item.desc }}</p>
+            <h4 class="text-lg md:text-xl font-bold mb-2">{{ item.title }}</h4>
+            <p class="text-xs md:text-sm text-center mb-4">{{ item.desc }}</p>
             <a :href="item.link" target="_blank" class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
               <i class="bi bi-link-45deg text-xl"></i>
             </a>

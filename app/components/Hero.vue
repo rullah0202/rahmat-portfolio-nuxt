@@ -11,8 +11,8 @@
 
     <!-- Content -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-      <h2 class="text-5xl md:text-7xl font-bold font-poppins mb-4">I am Rahmat Ullah</h2>
-      <p class="text-2xl md:text-3xl font-medium">
+      <h2 class="text-4xl md:text-6xl font-bold font-poppins mb-2 md:mb-4 leading-tight">I am Rahmat Ullah</h2>
+      <p class="text-xl md:text-3xl font-medium">
         <span ref="typedElement"></span>
       </p>
     </div>
