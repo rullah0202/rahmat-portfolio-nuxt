@@ -2,64 +2,62 @@
   <section id="about" class="py-16 md:py-20 bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
       <div class="bg-white shadow-[0_0_20px_rgba(0,0,0,0.05)] p-6 md:p-10 rounded-lg border border-gray-50">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
           
-          <!-- Left Column: Image, Info & Skills -->
-          <div class="lg:col-span-5">
+          <!-- Left Column -->
+          <div>
             <div class="flex flex-col sm:flex-row gap-6 mb-8">
-              <!-- Image -->
-              <div class="w-32 sm:w-40 shrink-0 mx-auto sm:mx-0">
-                <img src="/assets/img/profile-img.jpg" alt="Rahmat Ullah" class="w-full rounded shadow-sm">
+              <div class="w-40 shrink-0 mx-auto sm:mx-0">
+                <img src="/assets/img/profile-img.webp" alt="Rahmat Ullah" class="w-full rounded shadow-sm">
               </div>
-              <!-- Info Details -->
               <div class="space-y-3 text-[15px] md:text-base">
-                <p><span class="font-bold text-gray-800">Name: </span><span class="text-gray-600">Rahmat Ullah</span></p>
-                <p><span class="font-bold text-gray-800">Profile: </span><span class="text-gray-600">Full stack developer</span></p>
-                <p><span class="font-bold text-gray-800">Email: </span><span class="text-gray-600">rullah0202@gmail.com</span></p>
-                <p><span class="font-bold text-gray-800">Phone: </span><span class="text-gray-600">+880 1915 81 02 02</span></p>
+                <p><strong class="text-gray-800">Name: </strong><span class="text-gray-600">Rahmat Ullah</span></p>
+                <p><strong class="text-gray-800">Profile: </strong><span class="text-gray-600">Senior Laravel Developer</span></p>
+                <p><strong class="text-gray-800">Email: </strong><span class="text-gray-600">rullah0202@gmail.com</span></p>
+                <p><strong class="text-gray-800">Phone: </strong><span class="text-gray-600">(880) 1915-810202</span></p>
               </div>
             </div>
 
             <!-- Skills -->
             <div>
-              <h3 class="font-bold text-gray-800 mb-4 font-poppins">Skill</h3>
+              <h5 class="font-bold text-lg text-gray-800 mb-4 font-poppins">Skills</h5>
               <div class="space-y-4">
                 <div>
-                  <div class="flex justify-between text-xs md:text-sm mb-1"><span class="font-semibold text-gray-700">PHP</span><span class="text-gray-600">100%</span></div>
-                  <div class="w-full bg-blue-100 h-[6px] rounded-full"><div class="bg-blue-600 h-[6px] rounded-full" style="width: 100%"></div></div>
+                  <div class="flex justify-between text-sm mb-1"><span class="font-medium text-gray-700">HTML</span><span class="text-gray-600">95%</span></div>
+                  <div class="w-full bg-blue-100 h-[8px] rounded-full"><div class="bg-blue-600 h-[8px] rounded-full" style="width: 95%"></div></div>
                 </div>
                 <div>
-                  <div class="flex justify-between text-xs md:text-sm mb-1"><span class="font-semibold text-gray-700">Vue</span><span class="text-gray-600">80%</span></div>
-                  <div class="w-full bg-blue-100 h-[6px] rounded-full"><div class="bg-blue-600 h-[6px] rounded-full" style="width: 80%"></div></div>
+                  <div class="flex justify-between text-sm mb-1"><span class="font-medium text-gray-700">CSS</span><span class="text-gray-600">90%</span></div>
+                  <div class="w-full bg-blue-100 h-[8px] rounded-full"><div class="bg-blue-600 h-[8px] rounded-full" style="width: 90%"></div></div>
                 </div>
                 <div>
-                  <div class="flex justify-between text-xs md:text-sm mb-1"><span class="font-semibold text-gray-700">Laravel</span><span class="text-gray-600">100%</span></div>
-                  <div class="w-full bg-blue-100 h-[6px] rounded-full"><div class="bg-blue-600 h-[6px] rounded-full" style="width: 100%"></div></div>
+                  <div class="flex justify-between text-sm mb-1"><span class="font-medium text-gray-700">JavaScript</span><span class="text-gray-600">85%</span></div>
+                  <div class="w-full bg-blue-100 h-[8px] rounded-full"><div class="bg-blue-600 h-[8px] rounded-full" style="width: 85%"></div></div>
                 </div>
                 <div>
-                  <div class="flex justify-between text-xs md:text-sm mb-1"><span class="font-semibold text-gray-700">Nuxt.js</span><span class="text-gray-600">70%</span></div>
-                  <div class="w-full bg-blue-100 h-[6px] rounded-full"><div class="bg-blue-600 h-[6px] rounded-full" style="width: 70%"></div></div>
+                  <div class="flex justify-between text-sm mb-1"><span class="font-medium text-gray-700">Laravel</span><span class="text-gray-600">90%</span></div>
+                  <div class="w-full bg-blue-100 h-[8px] rounded-full"><div class="bg-blue-600 h-[8px] rounded-full" style="width: 90%"></div></div>
                 </div>
                 <div>
-                  <div class="flex justify-between text-xs md:text-sm mb-1"><span class="font-semibold text-gray-700">jQuery</span><span class="text-gray-600">80%</span></div>
-                  <div class="w-full bg-blue-100 h-[6px] rounded-full"><div class="bg-blue-600 h-[6px] rounded-full" style="width: 80%"></div></div>
+                  <div class="flex justify-between text-sm mb-1"><span class="font-medium text-gray-700">Vue/Nuxt</span><span class="text-gray-600">80%</span></div>
+                  <div class="w-full bg-blue-100 h-[8px] rounded-full"><div class="bg-blue-600 h-[8px] rounded-full" style="width: 80%"></div></div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Right Column: About Me Text -->
-          <div class="lg:col-span-7">
-            <h2 class="text-2xl md:text-3xl font-semibold font-poppins mb-6 text-gray-800 relative pb-3">
+          <!-- Right Column -->
+          <div>
+            <h4 class="text-2xl md:text-3xl font-semibold font-poppins mb-6 text-gray-800 relative pb-3">
               About me
-              <span class="absolute bottom-0 left-0 w-12 h-[3px] bg-blue-600"></span>
-            </h2>
+              <span class="absolute bottom-0 left-0 w-16 h-[3px] bg-blue-600"></span>
+            </h4>
             
             <p class="text-gray-600 leading-relaxed mb-4 text-[15px] md:text-base">
-              I'm a full-stack developer with 5+ years experience. I have experience in the following areas HTML, CSS, CSS3, Bootstrap, JS & jQuery, Javascript, jSON, Vue.js, PHP, Laravel, API Integrating, MySQL Database.
+              Senior Laravel Developer with 7+ years experience. I have experience in the following areas: HTML 5 | CSS3 | Bootstrap5 | Tailwind | JavaScript | jQuery | Ajax | Vue | Nuxt | Pinia | PHP | Laravel | MySQL
             </p>
             <p class="text-gray-600 leading-relaxed text-[15px] md:text-base">
-              My core competency lies in the end-to-end management of a new website development project, and I am seeking opportunities to build websites from the ground up for you or your business. Let's build your new site or working product.
+              My core competency lies in complete end-end management of a new website development project, and I build fast, secure websites, Software development from the ground up for you or your business. Let's turn your idea into a working product.
             </p>
           </div>
           
