@@ -6,7 +6,7 @@
         <div class="w-14 h-[3px] bg-blue-600 mx-auto mb-6 md:mb-8"></div>
       </div>
 
-      <!-- Filters matching live site -->
+      <!-- Filters: All, Web, Software -->
       <div class="flex justify-center gap-5 md:gap-8 mb-8 md:mb-10 border-b pb-2 max-w-md mx-auto">
         <button 
           @click="activeFilter = '*'" 
@@ -14,20 +14,15 @@
           class="pb-2 text-xs md:text-sm font-bold uppercase tracking-wider transition-all"
         >All</button>
         <button 
-          @click="activeFilter = 'app'" 
-          :class="activeFilter === 'app' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-700 hover:text-blue-600'"
-          class="pb-2 text-xs md:text-sm font-bold uppercase tracking-wider transition-all"
-        >App</button>
-        <button 
-          @click="activeFilter = 'card'" 
-          :class="activeFilter === 'card' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-700 hover:text-blue-600'"
-          class="pb-2 text-xs md:text-sm font-bold uppercase tracking-wider transition-all"
-        >Card</button>
-        <button 
           @click="activeFilter = 'web'" 
           :class="activeFilter === 'web' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-700 hover:text-blue-600'"
           class="pb-2 text-xs md:text-sm font-bold uppercase tracking-wider transition-all"
         >Web</button>
+        <button 
+          @click="activeFilter = 'software'" 
+          :class="activeFilter === 'software' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-700 hover:text-blue-600'"
+          class="pb-2 text-xs md:text-sm font-bold uppercase tracking-wider transition-all"
+        >Software</button>
       </div>
 
       <!-- Portfolio Grid -->
@@ -58,15 +53,15 @@ import { ref, computed } from 'vue'
 
 const activeFilter = ref('*')
 
-// Apni chaile category gulo (app, card, web) onujayi update kore nite paren
+// Projects categorized accurately into 'web' and 'software'
 const portfolioItems = [
-  { title: 'POS', desc: 'Point of Sale, Developed using Laravel', category: 'app', img: '/assets/img/portfolio/pos.png', link: 'https://pos.rullah.com/' },
+  { title: 'POS', desc: 'Point of Sale, Developed using Laravel', category: 'software', img: '/assets/img/portfolio/pos.png', link: 'https://pos.rullah.com/' },
   { title: 'Multivendor Ecommerce', desc: 'Multivendor Ecommerce, Developed using Laravel', category: 'web', img: '/assets/img/portfolio/mvecom.png', link: 'https://mvecom.rullah.com/' },
   { title: 'Newsportal', desc: 'Newsportal, Developed using Laravel', category: 'web', img: '/assets/img/portfolio/newsportal.png', link: 'https://np.rullah.com/' },
   { title: 'Online Hotel Booking', desc: 'Online Hotel Booking, Developed using Laravel', category: 'web', img: '/assets/img/portfolio/hotel.png', link: 'https://hb.rullah.com/' },
   { title: 'Music Social Network', desc: 'Music Social Network, Developed using Vue Laravel', category: 'web', img: '/assets/img/portfolio/msn.png', link: 'https://msn.rullah.com/' },
-  { title: 'Inventory Management', desc: 'Inventory Management Software, Developed using Laravel', category: 'app', img: '/assets/img/portfolio/inv.png', link: 'https://inv.rullah.com/' },
-  { title: 'Tiktok Clone', desc: 'Tiktok Clone, Developed using Nuxt Laravel', category: 'app', img: '/assets/img/portfolio/tiktok-clone.png', link: 'https://tiktok-clone.rullah.com/' }
+  { title: 'Inventory Management', desc: 'Inventory Management Software, Developed using Laravel', category: 'software', img: '/assets/img/portfolio/inv.png', link: 'https://inv.rullah.com/' },
+  { title: 'Tiktok Clone', desc: 'Tiktok Clone, Developed using Nuxt Laravel', category: 'web', img: '/assets/img/portfolio/tiktok-clone.png', link: 'https://tiktok-clone.rullah.com/' }
 ]
 
 const filteredItems = computed(() => {
