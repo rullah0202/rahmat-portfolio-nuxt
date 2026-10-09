@@ -9,8 +9,8 @@
       <Portfolio />
       <Contact />
     </main>
-    <!-- Footer add kora holo -->
-    <Footer />
+    <!-- Footer-er nam poriborton kora hoyeche -->
+    <AppFooter />
   </div>
 </template>
 
