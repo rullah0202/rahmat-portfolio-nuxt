@@ -27,16 +27,18 @@
 
       <!-- Portfolio Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-500">
+        <!-- bg-[#0a0a0a], aspect-[4/3], flex, items-center, justify-center add kora hoyeche -->
         <div 
           v-for="(item, index) in filteredItems" 
           :key="index"
-          class="bg-white rounded-lg overflow-hidden shadow-md group relative"
+          class="bg-[#0a0a0a] rounded-lg overflow-hidden shadow-md group relative aspect-[4/3] flex items-center justify-center"
         >
-          <img :src="item.img" :alt="item.title" class="w-full h-auto transition-transform duration-500 group-hover:scale-110">
+          <!-- h-full ebong object-contain add kora hoyeche -->
+          <img :src="item.img" :alt="item.title" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110">
           
-          <div class="absolute inset-0 bg-blue-600/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
-            <h4 class="text-lg md:text-xl font-bold mb-2">{{ item.title }}</h4>
-            <p class="text-xs md:text-sm text-center mb-4">{{ item.desc }}</p>
+          <div class="absolute inset-0 bg-blue-600/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4 z-10">
+            <h4 class="text-lg md:text-xl font-bold mb-2 text-center">{{ item.title }}</h4>
+            <p class="text-xs md:text-sm text-center mb-4 px-2">{{ item.desc }}</p>
             <a :href="item.link" target="_blank" class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
               <i class="bi bi-link-45deg text-xl"></i>
             </a>
@@ -53,8 +55,14 @@ import { ref, computed } from 'vue'
 
 const activeFilter = ref('*')
 
-// Projects categorized accurately into 'web' and 'software'
 const portfolioItems = [
+  { 
+    title: 'Ananna Boutique', 
+    desc: 'Premium Fashion E-commerce Store, Developed using Laravel, Inertia & Nuxt', 
+    category: 'web', 
+    img: '/assets/img/portfolio/ananna-boutique.webp', 
+    link: 'https://www.anannaboutique.com/' 
+  },
   { title: 'POS', desc: 'Point of Sale, Developed using Laravel', category: 'software', img: '/assets/img/portfolio/pos.png', link: 'https://pos.rullah.com/' },
   { title: 'Multivendor Ecommerce', desc: 'Multivendor Ecommerce, Developed using Laravel', category: 'web', img: '/assets/img/portfolio/mvecom.png', link: 'https://mvecom.rullah.com/' },
   { title: 'Newsportal', desc: 'Newsportal, Developed using Laravel', category: 'web', img: '/assets/img/portfolio/newsportal.png', link: 'https://np.rullah.com/' },
